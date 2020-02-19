@@ -1,0 +1,16 @@
+//
+//  Develop.xcconfig
+//  Atia Hospital
+//
+//  Created by Kerim Njuhovic on 10/02/2020.
+//  Copyright © 2020 Kerim Njuhovic. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_BUNDLE_IDENTIFIER = com.demo.hospital.dev
+APP_BUNDLE_NAME = Hospital Dev
+BACKEND_URL = https:\/\/atia-hospital.firebaseio.com
+APP_BUNDLE_VERSION = 1.0.0
+BUNDLE_ID_SUFFIX = dev

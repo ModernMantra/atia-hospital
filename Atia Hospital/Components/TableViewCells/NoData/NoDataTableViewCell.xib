@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NoDataTableViewCell" rowHeight="231" id="KGk-i7-Jjw" customClass="NoDataTableViewCell" customModule="Atia_Hospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noData" translatesAutoresizingMaskIntoConstraints="NO" id="v1X-9c-jEy">
+                        <rect key="frame" x="220.5" y="65.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Lup-vy-MVC"/>
+                            <constraint firstAttribute="width" constant="100" id="wfr-YK-mpY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Notices Right Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL3-gK-tBv">
+                        <rect key="frame" x="182" y="165.5" width="177.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" name="text-primary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check again later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R79-04-CNe">
+                        <rect key="frame" x="204" y="191.5" width="133" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="text-secondary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R79-04-CNe" firstAttribute="top" secondItem="YL3-gK-tBv" secondAttribute="bottom" constant="5" id="1sx-pt-68X"/>
+                    <constraint firstItem="v1X-9c-jEy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HZZ-E4-jpr"/>
+                    <constraint firstItem="R79-04-CNe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="RcA-m7-dJE"/>
+                    <constraint firstItem="YL3-gK-tBv" firstAttribute="top" secondItem="v1X-9c-jEy" secondAttribute="bottom" id="SNn-Gs-wrV"/>
+                    <constraint firstItem="YL3-gK-tBv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="uqt-Jm-FK7"/>
+                    <constraint firstItem="v1X-9c-jEy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uwV-JO-MHE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-22.463768115942031" y="215.29017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noData" width="366" height="342"/>
+        <namedColor name="text-primary">
+            <color red="0.10199999809265137" green="0.10999999940395355" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-secondary">
+            <color red="0.75300002098083496" green="0.75300002098083496" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

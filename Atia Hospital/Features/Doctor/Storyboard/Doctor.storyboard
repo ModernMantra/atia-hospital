@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Doctor List View Controller-->
+        <scene sceneID="a7G-1t-Amf">
+            <objects>
+                <viewController storyboardIdentifier="DoctorListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ALs-27-Cuf" customClass="DoctorListViewController" customModule="Atia_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cnW-VZ-7Yd"/>
+                        <viewControllerLayoutGuide type="bottom" id="7RZ-Gp-Crp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Jg-9W-BIU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FvZ-2Q-rGT">
+                                <rect key="frame" x="20" y="100" width="374" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ALs-27-Cuf" id="vck-P8-GaG"/>
+                                    <outlet property="delegate" destination="ALs-27-Cuf" id="L1G-Jc-rWu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FvZ-2Q-rGT" secondAttribute="trailing" constant="20" symbolic="YES" id="5rS-s5-6Ka"/>
+                            <constraint firstItem="FvZ-2Q-rGT" firstAttribute="leading" secondItem="1Jg-9W-BIU" secondAttribute="leading" constant="20" symbolic="YES" id="pE9-mU-JkK"/>
+                            <constraint firstAttribute="bottom" secondItem="FvZ-2Q-rGT" secondAttribute="bottom" constant="20" symbolic="YES" id="usa-ij-MM2"/>
+                            <constraint firstItem="FvZ-2Q-rGT" firstAttribute="top" secondItem="1Jg-9W-BIU" secondAttribute="top" constant="100" id="zhg-hK-Uyr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="FvZ-2Q-rGT" id="xv3-xE-acX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygY-nm-pdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="184.82142857142856"/>
+        </scene>
+        <!--Doctor Detail View Controller-->
+        <scene sceneID="Ze9-Nr-1qK">
+            <objects>
+                <viewController storyboardIdentifier="DoctorDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P0l-s7-6a7" customClass="DoctorDetailViewController" customModule="Atia_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q4i-kv-RFf"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hY-rW-WhT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4X7-zg-LZb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-pl-55T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWc-CG-lfv">
+                                <rect key="frame" x="0.0" y="209" width="414" height="687"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wO-5f-WPj">
+                                        <rect key="frame" x="0.0" y="93" width="414" height="594"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW5-q5-Xzj">
+                                                <rect key="frame" x="20" y="30" width="374" height="61"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Cardiologist, chief of the Intervention center.Disease, Saint Center of the Main Chief Hispital in Cansaas City">
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohM-Af-s3R" customClass="RoundedFilledButton" customModule="Atia_Hospital" customModuleProvider="target">
+                                                <rect key="frame" x="103.5" y="494" width="207" height="50"/>
+                                                <color key="backgroundColor" name="highlighted"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qzE-oE-bA2"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="BOOK APPOINTMENT"/>
+                                                <connections>
+                                                    <action selector="bookAppointmentAction:" destination="P0l-s7-6a7" eventType="touchUpInside" id="dbi-ga-k67"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-BR-qLo">
+                                                <rect key="frame" x="20" y="111" width="58.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ohM-Af-s3R" secondAttribute="bottom" constant="50" id="OVG-oa-ESh"/>
+                                            <constraint firstItem="ohM-Af-s3R" firstAttribute="centerX" secondItem="4wO-5f-WPj" secondAttribute="centerX" id="RM1-Y3-Mv4"/>
+                                            <constraint firstItem="jW5-q5-Xzj" firstAttribute="top" secondItem="4wO-5f-WPj" secondAttribute="top" constant="30" id="VEY-oQ-w7G"/>
+                                            <constraint firstItem="ohM-Af-s3R" firstAttribute="width" secondItem="4wO-5f-WPj" secondAttribute="width" multiplier="0.5" id="XTi-qk-nfp"/>
+                                            <constraint firstAttribute="trailing" secondItem="jW5-q5-Xzj" secondAttribute="trailing" constant="20" id="Y7d-wV-EcO"/>
+                                            <constraint firstItem="Vji-BR-qLo" firstAttribute="top" secondItem="jW5-q5-Xzj" secondAttribute="bottom" constant="20" id="gWp-9E-QdH"/>
+                                            <constraint firstItem="jW5-q5-Xzj" firstAttribute="leading" secondItem="4wO-5f-WPj" secondAttribute="leading" constant="20" id="n09-24-eFq"/>
+                                            <constraint firstItem="Vji-BR-qLo" firstAttribute="leading" secondItem="4wO-5f-WPj" secondAttribute="leading" constant="20" id="zQV-im-xgR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lO-zf-RXr">
+                                        <rect key="frame" x="35" y="20" width="148.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="background-tertiary"/>
+                                <constraints>
+                                    <constraint firstItem="4wO-5f-WPj" firstAttribute="leading" secondItem="uWc-CG-lfv" secondAttribute="leading" id="KFf-2x-cki"/>
+                                    <constraint firstAttribute="bottom" secondItem="4wO-5f-WPj" secondAttribute="bottom" id="LDs-yg-CM0"/>
+                                    <constraint firstItem="4lO-zf-RXr" firstAttribute="leading" secondItem="uWc-CG-lfv" secondAttribute="leading" constant="35" id="VQ7-Da-yMQ"/>
+                                    <constraint firstItem="4lO-zf-RXr" firstAttribute="top" secondItem="uWc-CG-lfv" secondAttribute="top" constant="20" id="hPe-5M-7wo"/>
+                                    <constraint firstAttribute="trailing" secondItem="4wO-5f-WPj" secondAttribute="trailing" id="mtz-Iw-PIk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uWc-CG-lfv" firstAttribute="leading" secondItem="eBx-pl-55T" secondAttribute="leading" id="5f3-64-yV3"/>
+                            <constraint firstItem="uWc-CG-lfv" firstAttribute="height" secondItem="4X7-zg-LZb" secondAttribute="height" multiplier="0.766741" id="Aj6-K5-zeW"/>
+                            <constraint firstItem="eBx-pl-55T" firstAttribute="top" secondItem="4X7-zg-LZb" secondAttribute="top" id="C0U-kq-h0M"/>
+                            <constraint firstItem="4wO-5f-WPj" firstAttribute="height" secondItem="4X7-zg-LZb" secondAttribute="height" multiplier="0.640625" constant="20" id="Evj-Vk-URM"/>
+                            <constraint firstItem="eBx-pl-55T" firstAttribute="leading" secondItem="4X7-zg-LZb" secondAttribute="leading" id="JOq-7Y-JW8"/>
+                            <constraint firstAttribute="trailing" secondItem="eBx-pl-55T" secondAttribute="trailing" id="Udc-jj-9UQ"/>
+                            <constraint firstAttribute="bottom" secondItem="uWc-CG-lfv" secondAttribute="bottom" id="pfy-XC-Eb8"/>
+                            <constraint firstItem="eBx-pl-55T" firstAttribute="height" secondItem="4X7-zg-LZb" secondAttribute="height" multiplier="0.4" id="u3L-TG-S1U"/>
+                            <constraint firstItem="uWc-CG-lfv" firstAttribute="trailing" secondItem="eBx-pl-55T" secondAttribute="trailing" id="yzV-0G-Ika"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appointmentBttn" destination="ohM-Af-s3R" id="QTp-v9-iRu"/>
+                        <outlet property="dateTxtField" destination="Vji-BR-qLo" id="ytU-fk-8c2"/>
+                        <outlet property="mainContainerView" destination="4wO-5f-WPj" id="eDC-hj-4so"/>
+                        <outlet property="nameContainerView" destination="uWc-CG-lfv" id="XJa-Y9-l9f"/>
+                        <outlet property="nameLbl" destination="4lO-zf-RXr" id="GEk-dg-Jzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1e-fd-AuK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.50724637681162" y="184.82142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doctor-placeholder" width="1600" height="1200"/>
+        <namedColor name="background-tertiary">
+            <color red="0.12549019607843137" green="0.23921568627450981" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="highlighted">
+            <color red="0.87099999189376831" green="0.47099998593330383" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+module Pods_Atia_Hospital {
+  umbrella header "Pods-Atia Hospital-umbrella.h"
+
+  export *
+  module * { export * }
+}

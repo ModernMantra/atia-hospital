@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rFt-HY-KhX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="dQq-0d-z3m">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rFt-HY-KhX" customClass="SignupViewController" customModule="Atia_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSK-Hr-I7J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="w29-7q-6SW">
+                                <rect key="frame" x="41.5" y="94" width="331" height="290"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-JS-HSK" customClass="RoundedTextField" customModule="Atia_Hospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yCm-w9-ONA"/>
+                                        </constraints>
+                                        <color key="textColor" name="text-primary"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rFt-HY-KhX" id="6iu-eb-5L0"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNJ-63-df7" customClass="RoundedTextField" customModule="Atia_Hospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="331" height="50"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mWj-ka-W6n"/>
+                                        </constraints>
+                                        <color key="textColor" name="text-primary"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rFt-HY-KhX" id="HUA-oH-UxM"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-XF-U9a" customClass="RoundedTextField" customModule="Atia_Hospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="331" height="50"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DQ8-m2-yLy"/>
+                                        </constraints>
+                                        <color key="textColor" name="text-primary"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rFt-HY-KhX" id="EWb-ra-06D"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aC-4M-r8I" customClass="RoundedTextField" customModule="Atia_Hospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="331" height="50"/>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7uo-yb-kTE"/>
+                                        </constraints>
+                                        <color key="textColor" name="text-primary"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rFt-HY-KhX" id="sr3-Jt-1px"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-2D-qyb" customClass="RoundedFilledButton" customModule="Atia_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="62" y="762" width="290" height="50"/>
+                                <color key="backgroundColor" name="highlighted"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wv0-Sp-bSH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupTouchUpInside:" destination="rFt-HY-KhX" eventType="touchUpInside" id="g4Y-it-AnY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aeo-Wr-qdy" firstAttribute="bottom" secondItem="WGJ-2D-qyb" secondAttribute="bottom" constant="50" id="Gb2-ak-0K7"/>
+                            <constraint firstItem="w29-7q-6SW" firstAttribute="centerX" secondItem="dSK-Hr-I7J" secondAttribute="centerX" id="M9d-Gq-4Iv"/>
+                            <constraint firstItem="WGJ-2D-qyb" firstAttribute="width" secondItem="dSK-Hr-I7J" secondAttribute="width" multiplier="0.7" id="X8K-xa-kur"/>
+                            <constraint firstItem="w29-7q-6SW" firstAttribute="width" secondItem="dSK-Hr-I7J" secondAttribute="width" multiplier="0.8" id="ghl-B9-BQu"/>
+                            <constraint firstItem="w29-7q-6SW" firstAttribute="top" secondItem="aeo-Wr-qdy" secondAttribute="top" constant="50" id="yOE-Zu-WLV"/>
+                            <constraint firstItem="WGJ-2D-qyb" firstAttribute="centerX" secondItem="dSK-Hr-I7J" secondAttribute="centerX" id="yT0-LW-o7s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aeo-Wr-qdy"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="XJh-XF-U9a" id="Vb9-hW-zSl"/>
+                        <outlet property="firstNameTxtField" destination="7ah-JS-HSK" id="7c7-ci-Ynl"/>
+                        <outlet property="lastNameTxtField" destination="NNJ-63-df7" id="h4d-pm-ekd"/>
+                        <outlet property="passwordTxtField" destination="4aC-4M-r8I" id="LwF-i7-DcC"/>
+                        <outlet property="signupBttn" destination="WGJ-2D-qyb" id="GZ9-sd-t7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kR-Or-yN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="-156"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="lyH-Bs-ekD">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f8v-RP-lp1" customClass="LoginViewController" customModule="Atia_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Roo-A7-DVe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2A-TK-F0q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Up0-hw-YLx">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Up0-hw-YLx" secondAttribute="bottom" id="5gS-od-2JR"/>
+                            <constraint firstItem="Up0-hw-YLx" firstAttribute="height" secondItem="Roo-A7-DVe" secondAttribute="height" multiplier="0.5" id="9bi-qz-Zjh"/>
+                            <constraint firstItem="Up0-hw-YLx" firstAttribute="trailing" secondItem="F7D-rZ-8ec" secondAttribute="trailing" id="b0k-J0-K7d"/>
+                            <constraint firstItem="W2A-TK-F0q" firstAttribute="leading" secondItem="F7D-rZ-8ec" secondAttribute="leading" id="cMy-Ze-6eG"/>
+                            <constraint firstItem="Up0-hw-YLx" firstAttribute="leading" secondItem="F7D-rZ-8ec" secondAttribute="leading" id="hFh-Qq-PJ7"/>
+                            <constraint firstItem="W2A-TK-F0q" firstAttribute="trailing" secondItem="F7D-rZ-8ec" secondAttribute="trailing" id="i0Q-6q-cJs"/>
+                            <constraint firstItem="Up0-hw-YLx" firstAttribute="top" secondItem="W2A-TK-F0q" secondAttribute="bottom" id="ldc-9u-B42"/>
+                            <constraint firstItem="W2A-TK-F0q" firstAttribute="top" secondItem="Roo-A7-DVe" secondAttribute="top" id="t7S-8l-KrD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F7D-rZ-8ec"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnx-Lh-Lof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2362.3188405797105" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="background">
+            <color red="0.91399997472763062" green="0.9179999828338623" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="highlighted">
+            <color red="0.87099999189376831" green="0.47099998593330383" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-primary">
+            <color red="0.10199999809265137" green="0.10999999940395355" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

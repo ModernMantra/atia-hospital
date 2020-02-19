@@ -1,0 +1,9 @@
+reporter: "xcode"
+
+excluded:
+- Pods
+
+disabled_rules:
+- trailing_whitespace
+- unused_closure_parameter
+- line_length
